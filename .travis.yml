@@ -1,0 +1,14 @@
+install: true
+before_script:
+  - bundle install
+  - bundle exec xcake make
+  - bundle exec pod install --verbose
+
+script:
+  - xcodebuild -workspace DemoXcode14NonParallelBuild.xcworkspace -scheme DemoXcode14NonParallelBuild -sdk iphonesimulator
+
+matrix:
+  include:
+    - os: osx
+      language: objective-c
+      osx_image: xcode10.1
