@@ -83,4 +83,4 @@ iOSInjectionProject/
 
 # PBX delendare est
 
-**/*.xcodeproj
+# **/*.xcodeproj
