@@ -6,41 +6,17 @@
 	objectVersion = 46;
 	objects = {
 
-/* Begin PBXAggregateTarget section */
-		C956D0BA7F5D8C527F4C3F9B7EC554C7 /* SwiftLint */ = {
-			isa = PBXAggregateTarget;
-			buildConfigurationList = 68D0567BAA05A26E09B677CC95D6BA86 /* Build configuration list for PBXAggregateTarget "SwiftLint" */;
-			buildPhases = (
-			);
-			dependencies = (
-			);
-			name = SwiftLint;
-		};
-/* End PBXAggregateTarget section */
-
 /* Begin PBXBuildFile section */
 		64A9B2519B1B2D159DB7699437B4CD10 /* Pods-DemoXcode14NonParallelBuild-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 8B18A16081C6065A8895F8D300D11367 /* Pods-DemoXcode14NonParallelBuild-dummy.m */; };
 		DC5BFFF1028D9EC0E7D2383E01EB4796 /* Pods-DemoXcode14NonParallelBuild-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 2279A7B3B0F95773070A9F556C97AC7B /* Pods-DemoXcode14NonParallelBuild-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		ED7EDA6468298B9137595DF8642DA82C /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 06844DCEC3E233FEB7AC34161DB85A55 /* Foundation.framework */; };
 /* End PBXBuildFile section */
 
-/* Begin PBXContainerItemProxy section */
-		E4B40A59B8916100A20F02561787DD3C /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 9F1CFF28222965B85EE87E9B347A0304 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = C956D0BA7F5D8C527F4C3F9B7EC554C7;
-			remoteInfo = SwiftLint;
-		};
-/* End PBXContainerItemProxy section */
-
 /* Begin PBXFileReference section */
 		06844DCEC3E233FEB7AC34161DB85A55 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS14.0.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
 		2279A7B3B0F95773070A9F556C97AC7B /* Pods-DemoXcode14NonParallelBuild-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-DemoXcode14NonParallelBuild-umbrella.h"; sourceTree = "<group>"; };
 		272492EA1890C0A4AED7002E7089CAA5 /* Pods-DemoXcode14NonParallelBuild-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-DemoXcode14NonParallelBuild-Info.plist"; sourceTree = "<group>"; };
 		496700C39B8B9DFF20A8FD8EEA8DE410 /* Pods-DemoXcode14NonParallelBuild-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-DemoXcode14NonParallelBuild-acknowledgements.markdown"; sourceTree = "<group>"; };
-		5967AB89B5A17945848CED21D7627629 /* SwiftLint.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = SwiftLint.release.xcconfig; sourceTree = "<group>"; };
-		6B9FD7E3FA1F6AA98954C61E8EB4C561 /* SwiftLint.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = SwiftLint.debug.xcconfig; sourceTree = "<group>"; };
 		6D37231F4565838CAA5F1DC4C8AE7D69 /* Pods-DemoXcode14NonParallelBuild.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-DemoXcode14NonParallelBuild.debug.xcconfig"; sourceTree = "<group>"; };
 		8A14C2C7BB396C2B705B075FBC254153 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		8B18A16081C6065A8895F8D300D11367 /* Pods-DemoXcode14NonParallelBuild-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-DemoXcode14NonParallelBuild-dummy.m"; sourceTree = "<group>"; };
@@ -91,28 +67,9 @@
 			children = (
 				8A14C2C7BB396C2B705B075FBC254153 /* Podfile */,
 				079515373D4CFFF537CE1BA6FD1FB4E5 /* Frameworks */,
-				C6519AE3EA849A39386725A87338A2C1 /* Pods */,
 				D4BD9C5EC27EAF9BD5035F339C8079E2 /* Products */,
 				29CFAB10AE8C031A5FC468D9D9A59FA2 /* Targets Support Files */,
 			);
-			sourceTree = "<group>";
-		};
-		839671FDDD46A9732F594753379850AE /* Support Files */ = {
-			isa = PBXGroup;
-			children = (
-				6B9FD7E3FA1F6AA98954C61E8EB4C561 /* SwiftLint.debug.xcconfig */,
-				5967AB89B5A17945848CED21D7627629 /* SwiftLint.release.xcconfig */,
-			);
-			name = "Support Files";
-			path = "../Target Support Files/SwiftLint";
-			sourceTree = "<group>";
-		};
-		C6519AE3EA849A39386725A87338A2C1 /* Pods */ = {
-			isa = PBXGroup;
-			children = (
-				D3BA9726A752B7D8BC0ED45B9BDE0E6C /* SwiftLint */,
-			);
-			name = Pods;
 			sourceTree = "<group>";
 		};
 		CDE78C030B6BAF431C27AE3FF462A56A /* Pods-DemoXcode14NonParallelBuild */ = {
@@ -129,15 +86,6 @@
 			);
 			name = "Pods-DemoXcode14NonParallelBuild";
 			path = "Target Support Files/Pods-DemoXcode14NonParallelBuild";
-			sourceTree = "<group>";
-		};
-		D3BA9726A752B7D8BC0ED45B9BDE0E6C /* SwiftLint */ = {
-			isa = PBXGroup;
-			children = (
-				839671FDDD46A9732F594753379850AE /* Support Files */,
-			);
-			name = SwiftLint;
-			path = SwiftLint;
 			sourceTree = "<group>";
 		};
 		D4BD9C5EC27EAF9BD5035F339C8079E2 /* Products */ = {
@@ -174,7 +122,6 @@
 			buildRules = (
 			);
 			dependencies = (
-				25B4BC59F591DBD388D336031D282480 /* PBXTargetDependency */,
 			);
 			name = "Pods-DemoXcode14NonParallelBuild";
 			productName = Pods_DemoXcode14NonParallelBuild;
@@ -204,7 +151,6 @@
 			projectRoot = "";
 			targets = (
 				37EDE1823B7882E7287515EEA9B3664B /* Pods-DemoXcode14NonParallelBuild */,
-				C956D0BA7F5D8C527F4C3F9B7EC554C7 /* SwiftLint */,
 			);
 		};
 /* End PBXProject section */
@@ -230,31 +176,7 @@
 		};
 /* End PBXSourcesBuildPhase section */
 
-/* Begin PBXTargetDependency section */
-		25B4BC59F591DBD388D336031D282480 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			name = SwiftLint;
-			target = C956D0BA7F5D8C527F4C3F9B7EC554C7 /* SwiftLint */;
-			targetProxy = E4B40A59B8916100A20F02561787DD3C /* PBXContainerItemProxy */;
-		};
-/* End PBXTargetDependency section */
-
 /* Begin XCBuildConfiguration section */
-		0615CF314517CB85E488F066DC137D6C /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 5967AB89B5A17945848CED21D7627629 /* SwiftLint.release.xcconfig */;
-			buildSettings = {
-				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				SDKROOT = iphoneos;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VALIDATE_PRODUCT = YES;
-			};
-			name = Release;
-		};
 		5829E30D774068970B5761736A89E7E5 /* Release */ = {
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = FD43D49F06F7C2D63FE9D47179E889FC /* Pods-DemoXcode14NonParallelBuild.release.xcconfig */;
@@ -321,20 +243,6 @@
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
-			};
-			name = Debug;
-		};
-		6DB01A1D02F112E33A1B10DE9A87A236 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 6B9FD7E3FA1F6AA98954C61E8EB4C561 /* SwiftLint.debug.xcconfig */;
-			buildSettings = {
-				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				SDKROOT = iphoneos;
-				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
 		};
@@ -469,15 +377,6 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		68D0567BAA05A26E09B677CC95D6BA86 /* Build configuration list for PBXAggregateTarget "SwiftLint" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				6DB01A1D02F112E33A1B10DE9A87A236 /* Debug */,
-				0615CF314517CB85E488F066DC137D6C /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
 		E75A7785F0375A6D595DFDA4BCD204BE /* Build configuration list for PBXNativeTarget "Pods-DemoXcode14NonParallelBuild" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (

@@ -12,9 +12,9 @@ application_for :ios, '15.0' do |target|
   swiftlint_file = '${BUILT_PRODUCTS_DIR}/SwiftLint-touched.txt'
   swiftlint_phase_script = <<-SWIFTLINT
   trap 'exit 0;' INT
-  "${PODS_ROOT}"/SwiftLint/swiftlint && echo "Main target" > #{swiftlint_file}
+  sleep 5 && echo "Main target" > #{swiftlint_file}
   SWIFTLINT
-  target.shell_script_build_phase('SwiftLint', swiftlint_phase_script) do |phase|
+  target.shell_script_build_phase('Sleeeep', swiftlint_phase_script) do |phase|
     config_excludes = YAML.load_file('.swiftlint.yml')['excluded']
                           .map { |filename| filename.end_with?('.swift') ? [filename] : Dir["#{filename}/**/*.swift"] }
                           .flatten

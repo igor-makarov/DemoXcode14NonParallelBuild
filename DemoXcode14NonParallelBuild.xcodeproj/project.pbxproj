@@ -203,7 +203,7 @@
 				3A7338C5AAA5FA37D722B5A2491ECF14 /* [CP] Check Pods Manifest.lock */,
 				35F0677488CCD46914AEF4F39A6C4E71 /* Resources */,
 				67F9A6F76A1F89122F9A3895AF6185F5 /* Sources */,
-				4869146B05FD3066C6C31ACA2F407DAF /* SwiftLint */,
+				20DDC2D0F3CF9A3944EA6040B72E1230 /* Sleeeep */,
 				6F73977E5C32006322F1797343788620 /* Frameworks */,
 			);
 			buildRules = (
@@ -257,6 +257,31 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
+		20DDC2D0F3CF9A3944EA6040B72E1230 /* Sleeeep */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${SRCROOT}/DemoXcode14NonParallelBuild/AppDelegate.swift",
+				"${SRCROOT}/DemoXcode14NonParallelBuild/Helpers/Utilities/ConfigurationManager.swift",
+				"${SRCROOT}/DemoXcode14NonParallelBuild/Helpers/Utilities/DeeplinkHandler.swift",
+				"${SRCROOT}/DemoXcode14NonParallelBuild/Helpers/Utilities/NotificationsHandler.swift",
+				"${SRCROOT}/DemoXcode14NonParallelBuild/Helpers/Utilities/RootRouter.swift",
+				"${SRCROOT}/DemoXcode14NonParallelBuild/main.swift",
+			);
+			name = Sleeeep;
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"${BUILT_PRODUCTS_DIR}/SwiftLint-touched.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "trap 'exit 0;' INT\nsleep 5 && echo \"Main target\" > ${BUILT_PRODUCTS_DIR}/SwiftLint-touched.txt\n";
+		};
 		3A7338C5AAA5FA37D722B5A2491ECF14 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -278,31 +303,6 @@
 			shellPath = /bin/sh;
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
-		};
-		4869146B05FD3066C6C31ACA2F407DAF /* SwiftLint */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-			);
-			inputPaths = (
-				"${SRCROOT}/DemoXcode14NonParallelBuild/AppDelegate.swift",
-				"${SRCROOT}/DemoXcode14NonParallelBuild/Helpers/Utilities/ConfigurationManager.swift",
-				"${SRCROOT}/DemoXcode14NonParallelBuild/Helpers/Utilities/DeeplinkHandler.swift",
-				"${SRCROOT}/DemoXcode14NonParallelBuild/Helpers/Utilities/NotificationsHandler.swift",
-				"${SRCROOT}/DemoXcode14NonParallelBuild/Helpers/Utilities/RootRouter.swift",
-				"${SRCROOT}/DemoXcode14NonParallelBuild/main.swift",
-			);
-			name = SwiftLint;
-			outputFileListPaths = (
-			);
-			outputPaths = (
-				"${BUILT_PRODUCTS_DIR}/SwiftLint-touched.txt",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "trap 'exit 0;' INT\n\"${PODS_ROOT}\"/SwiftLint/swiftlint && echo \"Main target\" > ${BUILT_PRODUCTS_DIR}/SwiftLint-touched.txt\n";
 		};
 /* End PBXShellScriptBuildPhase section */
 
