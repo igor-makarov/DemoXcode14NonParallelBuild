@@ -1,3 +1,4 @@
+require 'censorius'
 require 'yaml'
 
 project.name = 'DemoXcode14NonParallelBuild'
@@ -21,6 +22,14 @@ application_for :ios, '15.0' do |target|
     phase.input_paths = file_list.map { |f| "${SRCROOT}/#{f}" }
     phase.output_paths = [swiftlint_file]
   end
+end
+
+project.before_save do |generated_project|
+  generated_project.sort
+  # generated_project.garbage_collect
+  generator = Censorius::UUIDGenerator.new([generated_project])
+  generator.generate!
+  generator.write_debug_paths unless ENV['CENSORIUS_SPEC_DEBUG'].nil?
 end
 
 project.after_save do
