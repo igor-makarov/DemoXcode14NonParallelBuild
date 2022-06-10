@@ -7,6 +7,7 @@ application_for :ios, '15.0' do |target|
   target.name = 'DemoXcode14NonParallelBuild'
   target.all_configurations.each do |config|
     config.product_bundle_identifier = 'com.igor.demoxcode14nonparallelbuild'
+    config.settings['FUSE_BUILD_SCRIPT_PHASES'] = 'YES'
   end
 
   swiftlint_file = '${BUILT_PRODUCTS_DIR}/SwiftLint-touched.txt'
